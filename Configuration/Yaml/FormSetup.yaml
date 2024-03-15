@@ -12,24 +12,24 @@ TYPO3:
             EmailToSender:
               options:
                 templateRootPaths:
-                  1710509423: "EXT:form_collection/Resources/Private/Templates/Form/Finishers/"
+                  1710509423: "EXT:form_collection/Resources/Private/Forms/Templates/Finishers/"
                 layoutRootPaths:
-                  1710509423: "EXT:form_collection/Resources/Private/Layouts/Form/Finishers/"
+                  1710509423: "EXT:form_collection/Resources/Private/Forms/Layouts/Finishers/"
             EmailToReceiver:
               options:
                 templateRootPaths:
-                  1710509423: "EXT:form_collection/Resources/Private/Templates/Form/Finishers/"
+                  1710509423: "EXT:form_collection/Resources/Private/Forms/Templates/Finishers/"
                 layoutRootPaths:
-                  1710509423: "EXT:form_collection/Resources/Private/Layouts/Form/Finishers/"
+                  1710509423: "EXT:form_collection/Resources/Private/Forms/Layouts/Finishers/"
           formElementsDefinition:
             Form:
               renderingOptions:
                 templateRootPaths:
-                  1710509423: "EXT:form_collection/Resources/Private/Templates/Form/"
+                  1710509423: "EXT:form_collection/Resources/Private/Forms/Templates/"
                 partialRootPaths:
-                  1710509423: "EXT:form_collection/Resources/Private/Partials/Form/"
+                  1710509423: "EXT:form_collection/Resources/Private/Forms/Partials/"
                 layoutRootPaths:
-                  1710509423: "EXT:form_collection/Resources/Private/Layouts/Form/"
+                  1710509423: "EXT:form_collection/Resources/Private/Forms/Layouts/"
                 translation:
                   translationFiles:
                     20: "EXT:form_collection/Resources/Private/Language/locallang.xlf"
