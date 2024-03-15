@@ -1,0 +1,127 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+identifier: kontakformular
+label: Kontakformular
+type: Form
+prototypeName: standard
+finishers:
+  -
+    identifier: LogFormData
+  -
+    options:
+      subject: '{subject}'
+      recipients:
+        4tmestorage@gmail.com: Maxiverse
+      senderAddress: 4tmestorage+contact@gmail.com
+      senderName: Maxiverse
+      addHtmlPart: true
+      attachUploads: true
+      title: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      subject: '{subject}'
+      recipients:
+        '{email}': ''
+      senderAddress: 4tmestorage@gmail.com
+      senderName: Maxiverse
+      addHtmlPart: true
+      attachUploads: true
+      title: ''
+    identifier: EmailToSender
+  -
+    options:
+      pageUid: '39'
+      additionalParameters: ''
+      fragment: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    identifier: contact-form
+    label: 'Contact Form'
+    type: Page
+    renderables:
+      -
+        type: SecureCheck
+        identifier: securecheck-1
+        label: 'Simple Spam Protection'
+        validators:
+          -
+            options:
+              securityLevel: 6
+              formTimeout: 5
+            identifier: SpamSecurityCheck
+      -
+        defaultValue: ''
+        identifier: name
+        label: Name
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Name
+            required: required
+            autocomplete: name
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: subject
+        label: Subject
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Subject
+            required: required
+            autocomplete: subject
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: email
+        label: Email
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Email address'
+            required: required
+            autocomplete: email
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        identifier: message
+        label: Message
+        type: Textarea
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: ''
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        type: Checkbox
+        identifier: dsgvo
+        label: Datenschutz
+        validators:
+          -
+            identifier: NotEmpty
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    identifier: summarypage
+    label: 'Summary page'
+    type: SummaryPage

@@ -1,0 +1,28 @@
+{
+  "name": "bokuno/form-collection",
+  "type": "typo3-cms-extension",
+  "description": "TYPO3 Forms collection for simple default forms",
+  "authors": [
+    {
+      "name": "Markus Ketterer",
+      "role": "Developer"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-core": "^12.4",
+    "typo3/cms-form": "^12.4",
+    "pagemachine/typo3-formlog": "2.*",
+    "wsm/form-spamshield": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "BokuNo\\FormCollection\\": "Classes"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "form_collection"
+    }
+  }
+}

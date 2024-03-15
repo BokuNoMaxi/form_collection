@@ -1,0 +1,7 @@
+plugin.tx_form.settings.yamlConfigurations {
+  1710509423 = EXT:form_collection/Configuration/Yaml/FormSetup.yaml
+}
+
+module.tx_form.settings.yamlConfigurations {
+  1710509423 = EXT:form_collection/Configuration/Yaml/FormSetup.yaml
+}

@@ -1,0 +1,47 @@
+<html
+  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers"
+  data-namespace-typo3-fluid="true"
+>
+  <f:variable name="hiddenLabel" value="{f:if(condition: '{doNotShowLabel} == 1', then: 'visually-hidden')}" />
+  <f:form.validationResults for="{element.rootForm.identifier}.{element.identifier}">
+    <f:if condition="{element.type} == 'Checkbox'">
+      <f:then>
+        <f:render section="error" arguments="{_all}" />
+
+        <div
+          class="mb-3 form-check {element.properties.containerClassAttribute}{f:if(condition: '{validationResults.errors.0}', then: ' form-error')}"
+        >
+          <f:format.raw>{elementContent}</f:format.raw>
+          <label class="form-check-label {hiddenLabel}" for="{element.uniqueIdentifier}">
+            {formvh:translateElementProperty(element: element, property: 'label')}
+          </label>
+        </div>
+      </f:then>
+      <f:else>
+        <div
+          class="mb-3 {element.properties.containerClassAttribute}{f:if(condition: '{validationResults.errors.0}', then: ' form-error')}"
+        >
+          <label class="form-label {hiddenLabel}" for="{element.uniqueIdentifier}">
+            {formvh:translateElementProperty(element: element, property: 'label')}
+            <f:if condition="{element.required}">*</f:if>
+          </label>
+          <f:format.raw>{elementContent}</f:format.raw>
+          <f:render section="error" arguments="{_all}" />
+        </div>
+      </f:else>
+    </f:if>
+  </f:form.validationResults>
+</html>
+
+<f:section name="error">
+  <f:if condition="{validationResults.flattenedErrors} && {renderFieldset} != 1">
+    <span id="{element.uniqueIdentifier}-errors" class="text-danger" role="alert">
+      <f:for each="{validationResults.errors}" as="error">
+        <f:format.htmlspecialchars>
+          {formvh:translateElementError(element: element, error: error)}
+        </f:format.htmlspecialchars>
+      </f:for>
+    </span>
+  </f:if>
+</f:section>

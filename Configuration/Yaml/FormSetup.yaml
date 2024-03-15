@@ -1,0 +1,35 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          10: EXT:form_collection/Resources/Private/Forms/
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: true
+      prototypes:
+        standard:
+          finishersDefinition:
+            EmailToSender:
+              options:
+                templateRootPaths:
+                  1710509423: "EXT:form_collection/Resources/Private/Templates/Form/Finishers/"
+                layoutRootPaths:
+                  1710509423: "EXT:form_collection/Resources/Private/Layouts/Form/Finishers/"
+            EmailToReceiver:
+              options:
+                templateRootPaths:
+                  1710509423: "EXT:form_collection/Resources/Private/Templates/Form/Finishers/"
+                layoutRootPaths:
+                  1710509423: "EXT:form_collection/Resources/Private/Layouts/Form/Finishers/"
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  1710509423: "EXT:form_collection/Resources/Private/Templates/Form/"
+                partialRootPaths:
+                  1710509423: "EXT:form_collection/Resources/Private/Partials/Form/"
+                layoutRootPaths:
+                  1710509423: "EXT:form_collection/Resources/Private/Layouts/Form/"
+                translation:
+                  translationFiles:
+                    20: "EXT:form_collection/Resources/Private/Language/locallang.xlf"

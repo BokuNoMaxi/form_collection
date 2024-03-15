@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
+  <file source-language="en" datatype="plaintext">
+    <header/>
+    <body>
+			<trans-unit id="element.contact-form.properties.label">
+        <source>Contact form</source>
+      </trans-unit>
+			<trans-unit id="element.subject.properties.label">
+        <source>Subject</source>
+      </trans-unit>
+			<trans-unit id="element.message.properties.label">
+        <source>Message</source>
+      </trans-unit>
+			<trans-unit id="element.dsgvo.properties.label">
+        <source><![CDATA[ I have read the <a href="/datapolicy" target="_blank">Data policy</a> and I agree with it.]]></source>
+      </trans-unit>
+			<trans-unit id="element.Form.renderingOptions.submitButtonLabel">
+				<source>Send message</source>
+			</trans-unit>
+			<trans-unit id="element.Form.renderingOptions.nextButtonLabel">
+					<source>Continue</source>
+			</trans-unit>
+			<trans-unit id="element.Form.renderingOptions.previousButtonLabel">
+					<source>Back</source>
+			</trans-unit>
+			<trans-unit id="element.summarypage.properties.label">
+				<source>Summary</source>
+			</trans-unit>
+			<trans-unit id="kontakformular.finisher.EmailToSender.subject">
+				<source>[Maxiverse]: new Message</source>
+			</trans-unit>
+			<trans-unit id="kontakformular.finisher.EmailToSender.title">
+				<source>You transmitted following informations</source>
+			</trans-unit>
+			<trans-unit id="kontakformular.finisher.EmailToReceiver.subject">
+					<source>[Maxiverse]: new Message</source>
+			</trans-unit>
+			<trans-unit id="kontakformular.finisher.EmailToReceiver.title">
+				<source>New message via contact form!</source>
+		</trans-unit>
+			<trans-unit id="finisher.Confirmation.message" approved="yes">
+					<source>Thank you for your message! We will get back to you as soon as possible.</source>
+			</trans-unit>
+		</body>
+  </file>
+</xliff>

@@ -1,0 +1,2 @@
+<f:render section="Title" arguments="{_all}" />
+<f:render section="Main" arguments="{_all}" />
