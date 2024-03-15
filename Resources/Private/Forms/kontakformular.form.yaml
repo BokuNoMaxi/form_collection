@@ -70,19 +70,6 @@ renderables:
             identifier: NotEmpty
       -
         defaultValue: ''
-        identifier: subject
-        label: Subject
-        type: Text
-        properties:
-          fluidAdditionalAttributes:
-            placeholder: Subject
-            required: required
-            autocomplete: subject
-        validators:
-          -
-            identifier: NotEmpty
-      -
-        defaultValue: ''
         identifier: email
         label: Email
         type: Text
@@ -96,6 +83,19 @@ renderables:
             identifier: NotEmpty
           -
             identifier: EmailAddress
+      -
+        defaultValue: ''
+        identifier: subject
+        label: Subject
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Subject
+            required: required
+            autocomplete: subject
+        validators:
+          -
+            identifier: NotEmpty
       -
         defaultValue: ''
         identifier: message
@@ -112,12 +112,12 @@ renderables:
         type: Checkbox
         identifier: dsgvo
         label: Datenschutz
-        validators:
-          -
-            identifier: NotEmpty
         properties:
           fluidAdditionalAttributes:
             required: required
+        validators:
+          -
+            identifier: NotEmpty
   -
     renderingOptions:
       previousButtonLabel: 'Previous step'
