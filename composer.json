@@ -12,6 +12,7 @@
   "require": {
     "typo3/cms-core": "^12.4 || ^13.4",
     "typo3/cms-form": "^12.4 || ^13.4",
+    "pagemachine/typo3-formlog": "*",
     "wsm/form-spamshield": "*"
   },
   "autoload": {
