@@ -10,10 +10,9 @@
   ],
   "license": "GPL-2.0-or-later",
   "require": {
-    "typo3/cms-core": "^12.4",
-    "typo3/cms-form": "^12.4",
-    "pagemachine/typo3-formlog": "2.*",
-    "wsm/form-spamshield": "1.*"
+    "typo3/cms-core": "^12.4 || ^13.4",
+    "typo3/cms-form": "^12.4 || ^13.4",
+    "wsm/form-spamshield": "dev-main"
   },
   "autoload": {
     "psr-4": {
